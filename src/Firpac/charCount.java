@@ -19,8 +19,8 @@ public class charCount {
 				if (charStr[i] == charStr[j]) {
 					charCount++;
 				}
-				map.put(charStr[i], charCount);
 			}
+			map.put(charStr[i], charCount);
 		}
 		System.out.println(map);
 	}
