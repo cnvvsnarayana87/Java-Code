@@ -1,5 +1,5 @@
 // Program to Find the Longest Contiguous Alphanumeric Substring.
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 import java.util.List;

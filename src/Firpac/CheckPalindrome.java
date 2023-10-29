@@ -1,5 +1,5 @@
 // Check if the input is a palindrome.
-package Firpac;
+package firpac;
 
 import java.util.Scanner;
 

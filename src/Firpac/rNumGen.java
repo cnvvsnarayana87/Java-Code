@@ -1,5 +1,5 @@
 // Generating 4-digit random number without using Math.random method
-package Firpac;
+package firpac;
 
 import java.time.Instant;
 

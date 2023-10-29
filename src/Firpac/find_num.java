@@ -1,5 +1,5 @@
 // Finding number in an Array and ArrayList
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 import java.util.Arrays;

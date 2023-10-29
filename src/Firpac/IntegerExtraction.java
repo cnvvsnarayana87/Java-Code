@@ -1,5 +1,5 @@
 // Program for extracting integers.
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 import java.util.List;

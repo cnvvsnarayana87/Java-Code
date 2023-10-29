@@ -1,6 +1,6 @@
 // Program to remove duplicates from a given array.
 
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 

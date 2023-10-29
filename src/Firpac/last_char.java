@@ -1,5 +1,5 @@
 // Extract last 4 characters of any String
-package Firpac;
+package firpac;
 
 public class last_char {
 

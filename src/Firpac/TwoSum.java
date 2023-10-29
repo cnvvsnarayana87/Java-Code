@@ -1,6 +1,6 @@
 /* Given an array of integers, find the indices of two numbers that add up to a specific target. 
  * Assume each input has exactly one solution, and the same element cannot be used twice.*/
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 

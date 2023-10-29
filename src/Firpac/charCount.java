@@ -1,5 +1,5 @@
 // Find a count of each character in a given String.
-package Firpac;
+package firpac;
 
 import java.util.HashMap;
 import java.util.Map;

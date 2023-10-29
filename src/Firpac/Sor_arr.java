@@ -1,5 +1,5 @@
 // Sorting of an Array 
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 import java.util.Set;

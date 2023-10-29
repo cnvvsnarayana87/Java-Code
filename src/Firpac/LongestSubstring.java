@@ -1,5 +1,5 @@
 // Longest contiguous Alphanumeric Substring Finder.
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 import java.util.List;

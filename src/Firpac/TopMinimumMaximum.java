@@ -1,6 +1,6 @@
 // Program to Find Minimum and Maximum Values.
 
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,5 +1,5 @@
 // Program to Find the Longest Palindromic Substring
-package Firpac;
+package firpac;
 
 public class LongestPalindromicSubstring {
 

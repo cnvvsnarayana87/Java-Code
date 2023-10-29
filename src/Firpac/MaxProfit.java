@@ -1,13 +1,13 @@
 /* Return the maximum profit by choosing a single day to buy and a different day in the 
  * future to sell.*/
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 
 public class MaxProfit {
 
 	public static void main(String[] args) {
-		int[] prices = { 7, 5, 1, 3, 6, 4, 1 };
+		int[] prices = {2,4,1};//{ 7, 5, 1, 3, 6, 4, 1 };
 		int profit = calculateMaxProfit(prices);
 		if (profit > 0) {
 			System.out.println("Profit Earned : " + profit);
@@ -20,7 +20,7 @@ public class MaxProfit {
 		if (prices.length <= 1) {
 			return 0;
 		} else {
-			int minPrice = Arrays.stream(prices).min().getAsInt();
+			int minPrice = Arrays.stream(prices).min().getAsInt();						
 			int indexOfMinPrice = 0;
 			for (int i = 0; i < prices.length; i++) {
 				if (prices[i] == minPrice) {

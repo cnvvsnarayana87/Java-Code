@@ -1,5 +1,5 @@
 // Program to find non-repetitive characters in a string.
-package Firpac;
+package firpac;
 
 public class NonRepChar {
 

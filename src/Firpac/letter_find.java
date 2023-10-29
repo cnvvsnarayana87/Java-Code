@@ -1,5 +1,5 @@
 // Program to identify the count of a letter in the sentence
-package Firpac;
+package firpac;
 
 public class letter_find {
 

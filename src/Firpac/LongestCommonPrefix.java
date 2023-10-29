@@ -1,5 +1,5 @@
 // Program to find the longest common prefix.
-package Firpac;
+package firpac;
 
 public class LongestCommonPrefix {
 

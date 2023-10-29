@@ -1,5 +1,5 @@
 // Program to Search for the Insert Position.
-package Firpac;
+package firpac;
 
 import java.util.Scanner;
 

@@ -1,5 +1,5 @@
 // Generating 4-digit random number
-package Firpac;
+package firpac;
 
 public class Prac_Class {
 

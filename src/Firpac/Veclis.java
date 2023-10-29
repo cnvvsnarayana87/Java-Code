@@ -1,5 +1,5 @@
 // Program to Convert a Vector to List
-package Firpac;
+package firpac;
 
 import java.util.Collections;
 import java.util.List;

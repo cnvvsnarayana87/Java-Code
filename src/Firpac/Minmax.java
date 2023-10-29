@@ -1,5 +1,5 @@
 // Minimum and Maximum element in an Array using sort method
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 

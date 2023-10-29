@@ -1,5 +1,5 @@
 // Program to convert the first and last letter of each word in a string to uppercase.
-package Firpac;
+package firpac;
 
 public class FirstAndLastLetterUppercase {
 

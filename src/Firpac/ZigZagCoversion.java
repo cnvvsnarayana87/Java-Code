@@ -1,5 +1,5 @@
 // ZigZag Conversion Program in Java
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 import java.util.List;

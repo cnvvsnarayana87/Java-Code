@@ -1,5 +1,5 @@
 //Find out highest numbers in an Array whose adjacent right numbers are smaller
-package Firpac;
+package firpac;
 
 public class high_num {
 

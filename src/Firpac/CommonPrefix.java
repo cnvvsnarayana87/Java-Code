@@ -1,5 +1,5 @@
 // Program to Find the Longest Common Prefix
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 

@@ -1,6 +1,6 @@
 // Reversal of String
 
-package Firpac;
+package firpac;
 
 public class rev_str {
 

@@ -1,5 +1,5 @@
 // Java Program to Expand a String.
-package Firpac;
+package firpac;
 
 public class ExpandInputString {
 

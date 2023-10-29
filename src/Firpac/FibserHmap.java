@@ -1,5 +1,5 @@
 // Fibonacci Series using HashMap
-package Firpac;
+package firpac;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Firpac;
+package firpac;
 
 public class A_Prototype{
 	

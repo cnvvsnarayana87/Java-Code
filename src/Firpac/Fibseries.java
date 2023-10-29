@@ -1,5 +1,5 @@
 // Fibonacci Series using Arrays
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 import java.util.Scanner;

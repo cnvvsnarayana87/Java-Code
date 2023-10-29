@@ -1,5 +1,5 @@
 // Java Program to Expand a String with Character Counts.
-package Firpac;
+package firpac;
 
 public class ExpandString {
 

@@ -1,5 +1,5 @@
 // Program to Find the First Missing Positive Integer.
-package Firpac;
+package firpac;
 
 import java.util.Arrays;
 import java.util.Set;
@@ -18,13 +18,15 @@ public class FirstMissingPositive {
 
 		Set<Integer> uniqueNumbers = Arrays.stream(inputArray).boxed().collect(Collectors.toSet());
 
-		for (int i = 0; i < uniqueNumbers.size(); i++) {
-			if (uniqueNumbers.contains(minPositiveElement)) {
-				minPositiveElement++;
-			} else {
-				break;
-			}
+		int missingNumber = findFirstPositive(uniqueNumbers, minPositiveElement);
+		System.out.println("First missing positive integer : " + missingNumber);
+	}
+
+	public static int findFirstPositive(Set<Integer> uniqueNumbers, int minPositiveElement) {
+		int result = minPositiveElement;
+		while (uniqueNumbers.contains(result)) {
+			result++;
 		}
-		System.out.println("First positive missng integer : " + minPositiveElement);
+		return result;
 	}
 }

@@ -1,5 +1,5 @@
 // Program for Reversing a String.
-package Firpac;
+package firpac;
 
 public class StringReversal {
 

@@ -1,5 +1,5 @@
 // Program to return a new Array after removing first and last elements of an Array.
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 

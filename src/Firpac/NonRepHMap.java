@@ -1,5 +1,5 @@
 // Program to find non-repetitive characters in a string using HashMap.
-package Firpac;
+package firpac;
 
 import java.util.HashMap;
 import java.util.Map;

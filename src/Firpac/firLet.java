@@ -1,6 +1,6 @@
 // First letter of each word present in String.
 
-package Firpac;
+package firpac;
 
 public class firLet {
 

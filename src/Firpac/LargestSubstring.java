@@ -1,5 +1,5 @@
 // Program to Find the Largest Substring without repeated characters.
-package Firpac;
+package firpac;
 
 import java.util.ArrayList;
 import java.util.List;
