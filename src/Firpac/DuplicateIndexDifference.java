@@ -1,27 +1,29 @@
-package firpac;
+// Program to check if the array contains duplicates and satisfies the given condition.
+ackage firpac;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class DuplicateIndexDifference {
 
 	public static void main(String[] args) {
-		int[] numbersArray = { 1, 2, 3, 1 };
-		int k = 3;
-		boolean result = containsNearbyDuplicate(numbersArray, k);
-		System.out.println("Contains duplicate with an index difference less than " + k + " is " + result);
+		int[] numbersArray = { 8,7,15,1,6,1,9,15 };
+		int indexDifference = 1;
+		int valueDifference = 3;
+		boolean result = containsNearbyDuplicate(numbersArray, indexDifference, valueDifference);
+		System.out.println("Indices & Values differences of duplicates are within limits: "+result);
 	}
 
-	public static boolean containsNearbyDuplicate(int[] nums, int k) {
-		return  Arrays.stream(nums)
-				.boxed()
-				.collect(Collectors.groupingBy(i -> i, LinkedHashMap::new, toList()))
-				.values().stream()
-				.anyMatch(list -> list.size() > 1 &&
-						IntStream.range(1, list.size())
-						.anyMatch(i -> list.get(i) - list.get(i - 1) <= k));
+	public static boolean containsNearbyDuplicate(int[] numbersArray, int indexDifference, int valueDifference) {
+		 Map<Integer, Integer> numberIndex = new HashMap<>();
+	        for (int i = 0; i < numbersArray.length; i++) {
+	            if (numberIndex.containsKey(numbersArray[i]) &&
+	                (Math.abs(numberIndex.get(numbersArray[i]) - i) <= indexDifference) &&
+	                (Math.abs(numbersArray[numberIndex.get(numbersArray[i])] - numbersArray[i]) <= valueDifference)) {
+	                return true;
+	            }
+	            numberIndex.put(numbersArray[i], i);
+	        }
+	        return false;
 	}
 }
-		

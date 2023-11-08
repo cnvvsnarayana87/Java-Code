@@ -1,34 +1,36 @@
 // Program to Find the Single Distinct Number.
 package firpac;
 
-public class UniqueNumber {
+import java.util.HashSet;
+import java.util.Set;
+
+public class DistinctNumber {
 
 	public static void main(String[] args) {
-
-		int[] numbersArray = { 4, 1, 2, 1, 2 };
+		int[] numbersArray = { 2, 2, 1 };
 		int singleNumber = findSingleNumber(numbersArray);
 		System.out.println("Single Distinct Number in the Array: " + singleNumber);
 	}
 
 	public static int findSingleNumber(int[] numbersArray) {
+		Set<Integer> uniqueNumbers = new HashSet<>();
 		int result = 0;
 		for (int number : numbersArray) {
 			result ^= number;
-		}
-		int uniqueNumber = 0;
-		for (int number : numbersArray) {
-			if ((result ^ number) == 0) {
-				if (uniqueNumber == 0) {
-					uniqueNumber = number;
-				} else {
-					uniqueNumber = 0;
-				}
+			if (!uniqueNumbers.add(number)) {
+				uniqueNumbers.remove(number);
 			}
 		}
-		if (uniqueNumber == 0) {
+
+		if (uniqueNumbers.contains(result)) {
+			return result;
+		} else {
+			result = 0;
+		}
+		if (result == 0) {
 			throw new IllegalArgumentException(
 					"The input does not meet the requirement that every element appears twice except for one.");
 		}
-		return uniqueNumber;
+		return result;
 	}
 }
