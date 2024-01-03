@@ -6,7 +6,7 @@ public class FirstOccurrence {
 	public static void main(String[] args) {
 
 		String haystack = "sabutsad";
-		String needle = "sad";
+		String needle = "but";
 		int indexOccurrence = findIndexOccurrence(haystack, needle);
 		System.out.println("First occurrence is at index : " + indexOccurrence);
 	}
