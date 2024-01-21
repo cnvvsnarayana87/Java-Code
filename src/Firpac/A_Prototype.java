@@ -20,8 +20,8 @@ public class A_Prototype {
 //		String y = "ab";
 //		x.concat(y);
 //		System.out.println(x);
-		Long i = (long) 3 * 900000000;
-		System.out.println(i);
-
+//		Long i = (long) 3 * 900000000;
+//		System.out.println(i);
+		
 	}
 }

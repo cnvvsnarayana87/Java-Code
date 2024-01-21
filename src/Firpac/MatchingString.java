@@ -16,8 +16,7 @@ public class MatchingString {
 
 		return Arrays.stream(words)
 				.filter(firstWord -> Arrays.stream(words)
-						.anyMatch(secondWord -> !firstWord.equals(secondWord) && secondWord.contains(firstWord)))
+						.anyMatch(secondWord -> !firstWord.equals(secondWord) && secondWord.indexOf(firstWord) != -1))
 				.collect(Collectors.toList());
 	}
 }
-
