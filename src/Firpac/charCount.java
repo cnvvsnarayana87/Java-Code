@@ -4,24 +4,30 @@ package firpac;
 import java.util.HashMap;
 import java.util.Map;
 
-public class charCount {
+public class CharCount {
 
 	public static void main(String[] args) {
+		String inputString = "Automation Testing";
+		Map<Character, Integer> charCountMap = getCharacterCount(inputString);
+		System.out.println(charCountMap);
+	}
+
+	public static Map<Character, Integer> getCharacterCount(String inputString) {
 		int charCount;
-		String str = "Automation Testing";
-		String nsStr = str.replace(" ", "");
-		String lStr = nsStr.toLowerCase();
-		char[] charStr = lStr.toCharArray();
-		Map<Character, Integer> map = new HashMap<>();
-		for (int i = 0; i < charStr.length; i++) {
+		String noSpaceString = inputString.replace(" ", "");
+		String lowerCaseString = noSpaceString.toLowerCase();
+		char[] charArray = lowerCaseString.toCharArray();
+		Map<Character, Integer> charCountMap = new HashMap<>();
+
+		for (int i = 0; i < charArray.length; i++) {
 			charCount = 0;
-			for (int j = 0; j < charStr.length; j++) {
-				if (charStr[i] == charStr[j]) {
+			for (int j = 0; j < charArray.length; j++) {
+				if (charArray[i] == charArray[j]) {
 					charCount++;
 				}
 			}
-			map.put(charStr[i], charCount);
+			charCountMap.put(charArray[i], charCount);
 		}
-		System.out.println(map);
+		return charCountMap;
 	}
 }

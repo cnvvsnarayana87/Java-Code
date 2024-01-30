@@ -3,8 +3,8 @@ package firpac;
 public class AddedLetter {
 
 	public static void main(String[] args) {
-		String originalString = "abcde";//"ahbl";
-		String modifiedString = "dbeacfx";//"alhbu";
+		String originalString = "ahbl";
+		String modifiedString = "alhbu";
 		char addedLetter = findAddedLetter(originalString, modifiedString);
 		System.out.println("Letter that was added to secondString : " + addedLetter);
 	}
@@ -16,11 +16,11 @@ public class AddedLetter {
 
 		for (int i = 0; i < modifiedString.length(); i++) {
 			if (i < originalString.length()) {
-				int tempOriginal = originalString.charAt(i);
+				int tempOriginal = originalString.codePointAt(i);
 				sumOfOriginalString = sumOfOriginalString + tempOriginal;
 			}
 			if (i < modifiedString.length()) {
-				int tempModified = modifiedString.charAt(i);
+				 int tempModified = modifiedString.codePointAt(i);
 				sumOfModifiedString = sumOfModifiedString + tempModified;
 			}
 		}
